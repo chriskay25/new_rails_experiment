@@ -1,0 +1,43 @@
+<h1>Dogs#index</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Breed</th>
+      <th>Category</th>
+      <th>Popularity Ranking</th>
+      <th>Intelligence Ranking</th>
+      <th>Intelligence Category</th>
+      <th>Life Expectancy</th>
+      <th>Lifetime Cost</th>
+      <th>Average Price</th>
+      <th>Price Bracket</th>
+      <th>Good With Kids</th>
+      <th>Size Category</th>
+      <th>Weight</th>
+      <th>Ailments</th>
+      <th>Number of Ailments</th>
+      <th>Specific Ailments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @dogs.each do |dog| %>
+      <tr>
+        <td><%= dog.breed %></td>
+        <td><%= dog.category %></td>
+        <td><%= dog.popularity_ranking %></td>
+        <td><%= dog.intelligence_ranking %></td>
+        <td><%= dog.intelligence_category %></td>
+        <td><%= dog.life_expectancy %></td>
+        <td><%= dog.lifetime_cost %></td>
+        <td><%= dog.avg_price %></td>
+        <td><%= dog.price_bracket %></td>
+        <td><%= dog.good_with_kids %></td>
+        <td><%= dog.size_category %></td>
+        <td><%= dog.weight_lbs %></td>
+        <td><%= dog.ailments_summary %></td>
+        <td><%= dog.num_of_ailments %></td>
+        <td><%= dog.ailments_specific %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
